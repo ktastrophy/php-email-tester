@@ -17,7 +17,6 @@ function sendEmail() {
 			throw new Exception('Please provide a valid "from" email.');
 		}
 		if(filter_var($to, FILTER_VALIDATE_EMAIL ) === false) {
-			throw new Exception('Please provide a valid "to" email.');
 		}
 		if(empty($subject)) {
 			throw new Exception('Please provide a valid subject');
